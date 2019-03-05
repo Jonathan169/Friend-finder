@@ -32,7 +32,7 @@ var decoy={
     matilda:6,
     country:7,
     answers:[1,2,3,4,5,6,7,8],
-    total:36
+    total:14
 }
 friends.push(decoy)
 //Routing
