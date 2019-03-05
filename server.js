@@ -3,7 +3,7 @@ var express=require("express");
 var path= require("path");
 var mysql=require("mysql");
 var app= express();
-var port=7001;
+var port=process.env.PORT||3000;
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 var connection=mysql.createConnection({
