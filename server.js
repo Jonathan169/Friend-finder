@@ -7,11 +7,15 @@ var port=process.env.PORT||3000;
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(express.static('public'))
-var connection=mysql.createConnection({
-    host:"s554ongw9quh1xjs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    port:3306,
-    user:"b5x8r8ludj5c94me",
-    password:"ljo9ra40y70bj476",
+var connection;
+if(process.env.JAWSDB_URL){
+    connection.mysql.createConnection(process.env.JAWSDB_URL)
+}
+connection=mysql.createConnection({
+    host:"localhost",
+    port:8889,
+    user:"root",
+    password:"root",
     database:"friends_db"
 })
 connection.connect(function(err){
