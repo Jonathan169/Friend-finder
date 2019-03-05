@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .hide{
+      display:none
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-light bg-light justify-content-center">
+                <span class="navbar-brand mb-0 h1"><h1>Friend <i class="fas fa-search"></i></h1></span>
+            </nav>
+            <br>
+            <br>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="questions">
+                    <div id="modal1" class="modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5  id="Mtitle" class="modal-title">Modal title</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div id="Mbody" class="modal-body">
+                                  <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button id="b1" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a class="btn btn-primary btn-lg" href="/index" role="button">Home</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                
+                <section id="index" class="main-section">
+                        <h1>Questions</h1>
+                  
+                        <form id="contact-form">
+                          <ol>
+                            <li>
+                              <label for="name">Name</label><br>
+                              <input style="width:14rem" type="text" id="name" name="name" placeholder="Jefferson StealFlex" required="required">
+                              <br><br>
+                            </li>
+                            <li>
+                                <label for="Bio">Bio</label><br>
+                                <textarea id="bio" name="Bio" class="form-control" aria-label="With textarea"></textarea>
+                                <br>
+                            </li>
+                            <li>
+                              <label for="email">Link to photo image</label><br>
+                              <input style="width:14rem" type="text" id="email" name="email" placeholder="image.com" required="required">
+                              <br><br>
+                            </li>
+                            <li>
+                                <label for="dogs">How much do you like dogs</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input1">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                      <option value="3">Four</option>
+                                      <option value="3">Five</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">Whos your Favorite super Hero</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input2">
+                                      <option selected>Choose...</option>
+                                      <option value="1">Spiderman</option>
+                                      <option value="2">Hulk</option>
+                                      <option value="3">Matilda</option>
+                                      <option value="3">iron man</option>
+                                      <option value="3">Captin America</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">do you have a vivid imagination</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input3">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                      <option value="3">Four</option>
+                                      <option value="3">Five</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">If so could you imagine whoever your matched with to be pretty</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input4">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                      <option value="3">Four</option>
+                                      <option value="3">Five</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">Do you have astigmatism</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input5">
+                                      <option selected>Choose...</option>
+                                      <option value="1">Yes</option>
+                                      <option value="2">noo</option>
+                                      <option value="3">maybe</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">You like Jazz?</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input6">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                      <option value="3">Four</option>
+                                      <option value="3">Five</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">Ok but fr tho from 1-5 how great is matilda</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input7">
+                                      <option selected>Choose...</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                      <option value="3">Four</option>
+                                      <option value="3">Five</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                            <li>
+                                <label for="dogs">how much do you listen to country?</label>
+                                <div name="dogs" class="input-group mb-3" style="width:14rem">
+                                    <select class="custom-select" id="input8">
+                                      <option selected>Choose...</option>
+                                      <option value="1">Never</option>
+                                      <option value="2">when a stranger plays it</option>
+                                      <option value="3">when a friend plays it</option>
+                                      <option value="3">i have a Tim Mcgraw song or 2</option>
+                                      <option value="3">YEEE-HAWWWW</option>
+                                    </select>
+                                </div>
+                                <br>
+                            </li>
+                          </ol>
+                          <input id="submit" type="submit">
+                        </form>
+                  
+                </section>
+            </div>
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+               
+        </div>
+        
+     </div>
+     <div class="row">
+        <div class="col-md-12">
+            
+        </div>
+    
+    </div> 
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+<script>
+var inp=[$("#name"),$("#email"),$("#input1"),$("#input2"),$("#input3"),$("#input4"),$("#input5"),$("#input6"),$("#input7"),$("#input8"),$("#bio")]
+var answers=[];
+function add(){
+  answers=[];
+  for(let i=2;i<inp.length-1;i++){
+            answers.push(parseInt(inp[i].val()))
+        }
+        var obj={
+        name:inp[0].val().trim(),
+        picUrl:inp[1].val().trim(),
+        dogs:inp[2].val().trim(),
+        hero:inp[3].val().trim(),
+        imagine:inp[4].val().trim(),
+        ugly:inp[5].val().trim(),
+        asti:inp[6].val().trim(),
+        jazz:inp[7].val().trim(),
+        matilda:inp[8].val().trim(),
+        country:inp[9].val().trim(),
+        bio:inp[10].val(),
+        answers:answers
+        }
+        var total=answers.reduce(function(accumulator,currentValue){
+        return accumulator+currentValue;
+        })
+        obj.total=total;
+        console.log(obj)
+        $.post("/api/add",obj)
+        .then(function(data){
+            console.log(data)
+            console.log("hihi")
+            $("#Mtitle").text("Best match!")
+            $("#Mbody").html(`
+            <div style="width:30rem" class="card">
+                <div class="card-header">
+                  ${data[0].userName}
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img  style="width:10rem" src="${data[0].picUrl}">
+                        </div>
+                        <div class="col-md-7">
+                            <p id="bioo" class="card-text">${data[0].bio}</p>
+                            <h1>${data[0].total}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `)
+            $("b1").attr("hide")
+            $("b2").removeClass("hide")
+            $("#modal1").modal("show")
+        })
+}
+$("#submit").on("click",function(event){
+  event.preventDefault();
+  for(let i=0;i<inp.length;i++){
+      if(inp[i].val()==="Choose..."|| inp[i].val()===""){
+        $("#modal1").modal("show")
+        $("#Mtitle").text("Alert")
+        $("#Mbody").text("Please fill out all questions")
+    }
+    else if(i===10){
+      add()
+    }
+  } 
+})
+$("#modal1").on("hide.bs.modal",function(){
+  if(answers!==[]){
+  window.location.href = "/";
+}
+})
+</script>
+</body>
+</html>
